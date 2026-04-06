@@ -495,6 +495,38 @@
       .problem, .covers, .how, .pricing, .faq, .final { padding-left: 20px; padding-right: 20px; }
       .photo-break { height: 280px; }
     }
+
+    /* ── BLOG SECTION ── */
+    .blog { padding: 100px 40px; background: var(--black); }
+    .blog-inner { max-width: 1100px; margin: 0 auto; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: rgba(255,255,255,0.06); margin-top: 64px; }
+    .blog-card {
+      background: var(--black);
+      display: block;
+      text-decoration: none;
+      transition: background 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--red);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+    .blog-card:hover { background: var(--dark2); }
+    .blog-card:hover::before { transform: scaleX(1); }
+    .blog-card-img { width: 100%; height: 180px; object-fit: cover; opacity: 0.6; display: block; }
+    .blog-card-body { padding: 28px 28px 32px; }
+    .blog-card-label { font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; display: block; }
+    .blog-card-title { font-family: var(--serif); font-size: 1.1rem; color: var(--white); line-height: 1.4; margin-bottom: 12px; }
+    .blog-card-excerpt { font-size: 13px; color: var(--muted); line-height: 1.65; }
+    .blog-card-arrow { font-size: 12px; color: var(--red); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 16px; display: block; }
+    @media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } .blog { padding-left: 20px; padding-right: 20px; } }
   </style>
 </head>
 <body>
@@ -766,6 +798,62 @@
         <div class="faq-q">What if I have questions after receiving my report?</div>
         <div class="faq-a">Reach us at hello@severanceclarity.com. For legal questions about your specific situation, always consult a licensed employment attorney.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BLOG -->
+<section class="blog" id="blog">
+  <div class="blog-inner">
+    <span class="section-eyebrow">Free Guides</span>
+    <h2 class="section-h2">UNDERSTAND YOUR<br /><em>RIGHTS.</em></h2>
+    <div class="blog-grid">
+      <a href="blog/what-does-release-of-claims-mean-severance-agreement.html" class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=70&auto=format&fit=crop" alt="Release of claims severance agreement" />
+        <div class="blog-card-body">
+          <span class="blog-card-label">Severance Guide</span>
+          <div class="blog-card-title">What Does "Release of Claims" Mean in a Severance Agreement?</div>
+          <div class="blog-card-excerpt">The most consequential part of your agreement — explained in plain English. What you're giving up and what can't be waived.</div>
+          <span class="blog-card-arrow">Read Guide →</span>
+        </div>
+      </a>
+      <a href="blog/how-long-do-you-have-to-sign-severance-agreement.html" class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&q=70&auto=format&fit=crop" alt="21 day severance deadline" />
+        <div class="blog-card-body">
+          <span class="blog-card-label">Severance Guide</span>
+          <div class="blog-card-title">How Long Do You Have to Sign a Severance Agreement?</div>
+          <div class="blog-card-excerpt">Federal law gives employees over 40 at least 21 days — plus a 7-day revocation window. Here's what you need to know.</div>
+          <span class="blog-card-arrow">Read Guide →</span>
+        </div>
+      </a>
+      <a href="blog/can-you-negotiate-severance-agreement.html" class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=70&auto=format&fit=crop" alt="Negotiate severance agreement" />
+        <div class="blog-card-body">
+          <span class="blog-card-label">Severance Guide</span>
+          <div class="blog-card-title">Can You Negotiate a Severance Agreement?</div>
+          <div class="blog-card-excerpt">Yes — and you should. Here's what's negotiable, how to approach it, and when to bring in an attorney.</div>
+          <span class="blog-card-arrow">Read Guide →</span>
+        </div>
+      </a>
+      <a href="blog/what-happens-to-401k-when-laid-off.html" class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=70&auto=format&fit=crop" alt="401k after layoff" />
+        <div class="blog-card-body">
+          <span class="blog-card-label">Severance Guide</span>
+          <div class="blog-card-title">What Happens to Your 401(k) When You Get Laid Off?</div>
+          <div class="blog-card-excerpt">Your vested 401(k) is yours — no matter what. Here's what happens to your retirement savings after a layoff.</div>
+          <span class="blog-card-arrow">Read Guide →</span>
+        </div>
+      </a>
+      <a href="blog/severance-agreement-non-compete-clause-explained.html" class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=70&auto=format&fit=crop" alt="Non-compete clause severance" />
+        <div class="blog-card-body">
+          <span class="blog-card-label">Severance Guide</span>
+          <div class="blog-card-title">Severance Agreement Non-Compete Clause: What It Really Means</div>
+          <div class="blog-card-excerpt">Duration, geography, scope, enforceability by state — everything you need to know before agreeing to any restrictions.</div>
+          <span class="blog-card-arrow">Read Guide →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
