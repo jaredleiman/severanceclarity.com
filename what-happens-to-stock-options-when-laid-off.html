@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What Happens to Your Stock Options and RSUs When You're Laid Off?</title>
+  <meta name="description" content="Equity treatment is one of the most complex and financially significant parts of a severance agreement. Here's what typically happens to unvested RSUs, stock options, and ESPP shares after a layoff."/>
+  <link rel="canonical" href="https://severanceclarity.com/blog/what-happens-to-stock-options-when-laid-off.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#0a0a0a;--dark:#111118;--dark2:#1a1a26;--mid:#252535;--steel:#3a3a52;--muted:#6b6b88;--fog:#a0a0bc;--light:#e8e8f0;--white:#f8f8fc;--red:#e63946;--red-dim:#c42d3a;--gold:#f4c430;--display:'Bebas Neue',sans-serif;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;}
+    html{scroll-behavior:smooth}
+    body{background:var(--dark);color:var(--light);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden}
+    a{color:var(--red);text-decoration:none}
+    a:hover{color:var(--gold)}
+    .topbar{background:var(--black);display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .topbar-logo{font-family:var(--display);font-size:1.6rem;letter-spacing:0.04em;color:var(--white);text-decoration:none}
+    .topbar-logo span{color:var(--red)}
+    .topbar-nav{display:flex;gap:32px;align-items:center}
+    .topbar-nav a{color:var(--fog);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
+    .topbar-nav a:hover{color:var(--white)}
+    .topbar-cta{background:var(--red);color:var(--white)!important;padding:10px 22px!important;font-weight:600!important}
+    .topbar-cta:hover{background:var(--red-dim)!important}
+    .post-hero{background:var(--black);padding:80px 40px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .post-hero-inner{max-width:820px;margin:0 auto;padding-bottom:56px}
+    .breadcrumb{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+    .breadcrumb a{color:var(--red)}.breadcrumb span{margin:0 10px;color:var(--steel)}
+    .post-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);margin-bottom:20px;display:block}
+    .post-hero h1{font-family:var(--display);font-size:clamp(2.8rem,6vw,5rem);letter-spacing:0.03em;color:var(--white);line-height:0.95;margin-bottom:24px}
+    .post-meta{font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);display:flex;gap:20px}
+    .hero-img-wrap{max-width:820px;margin:0 auto}
+    .hero-img-wrap img{width:100%;height:400px;object-fit:cover;display:block;opacity:0.65}
+    .post-wrap{max-width:820px;margin:0 auto;padding:56px 40px 100px;display:grid;grid-template-columns:1fr 240px;gap:56px;align-items:start}
+    .post-lead{font-family:var(--serif);font-size:1.2rem;font-weight:400;line-height:1.65;color:var(--light);margin-bottom:32px;padding-left:20px;border-left:3px solid var(--red)}
+    .post-body h2{font-family:var(--display);font-size:2.4rem;letter-spacing:0.03em;color:var(--white);margin:44px 0 16px;line-height:1;padding-top:44px;border-top:1px solid rgba(255,255,255,0.07)}
+    .post-body h2:first-child{margin-top:0;padding-top:0;border-top:none}
+    .post-body h3{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--gold);margin:28px 0 12px}
+    .post-body p{font-size:15px;font-weight:300;color:var(--fog);line-height:1.85;margin-bottom:18px}
+    .post-body ul,.post-body ol{padding-left:20px;margin-bottom:18px}
+    .post-body li{font-size:15px;font-weight:300;color:var(--fog);line-height:1.8;margin-bottom:8px}
+    .post-body strong{color:var(--light);font-weight:500}
+    .equity-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(255,255,255,0.06);margin:28px 0}
+    .equity-cell{background:var(--dark2);padding:24px}
+    .equity-type{font-family:var(--display);font-size:1.6rem;letter-spacing:0.03em;color:var(--white);margin-bottom:8px}
+    .equity-default{font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+    .equity-desc{font-size:13px;color:var(--fog);line-height:1.65}
+    .callout{background:rgba(230,57,70,0.1);border-left:3px solid var(--red);padding:20px 24px;margin:28px 0}
+    .callout-label{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+    .callout p{font-size:14px;font-weight:300;color:var(--light);margin:0;line-height:1.75}
+    .sidebar{position:sticky;top:88px}
+    .sidebar-label{font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--red);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08)}
+    .report-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);padding:24px}
+    .report-price{font-family:var(--display);font-size:3.5rem;letter-spacing:0.03em;color:var(--gold);line-height:1;margin-bottom:4px}
+    .report-tag{font-size:12px;font-style:italic;color:var(--muted);margin-bottom:18px;display:block}
+    .report-features{list-style:none;margin-bottom:20px}
+    .report-features li{font-size:12px;color:var(--fog);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:8px;line-height:1.5}
+    .report-features li::before{content:'→';color:var(--gold);flex-shrink:0}
+    .report-btn{display:block;width:100%;text-align:center;background:rgba(244,196,48,0.15);color:var(--gold);border:1px solid rgba(244,196,48,0.3);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:14px}
+    .report-btn:hover{background:rgba(244,196,48,0.25)}
+    .final-cta{text-align:center;padding:80px 40px;border-top:1px solid rgba(255,255,255,0.06);background:var(--black)}
+    .final-cta h2{font-family:var(--display);font-size:clamp(2.5rem,5vw,4.5rem);letter-spacing:0.04em;color:var(--white);line-height:0.95;margin-bottom:16px}
+    .final-cta h2 span{color:var(--red)}
+    .final-cta p{font-size:15px;color:var(--fog);margin-bottom:28px}
+    .btn-primary{display:inline-block;background:var(--red);color:var(--white);font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:16px 40px}
+    .btn-primary:hover{background:var(--red-dim);color:var(--white)}
+    footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.06);padding:40px;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--steel);flex-wrap:wrap;gap:16px}
+    footer a{color:var(--steel)}
+    @media(max-width:900px){.topbar{padding:0 20px}.topbar-nav{display:none}.post-hero{padding:60px 20px 0}.post-wrap{grid-template-columns:1fr;padding:48px 20px 80px}.sidebar{display:none}.equity-grid{grid-template-columns:1fr}.final-cta{padding:60px 20px}footer{padding:20px;flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<nav class="topbar">
+  <a href="/" class="topbar-logo">Severance<span>Clarity</span></a>
+  <div class="topbar-nav">
+    <a href="/#how-it-works">How It Works</a>
+    <a href="/#what-we-cover">What We Cover</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="/#pricing" class="topbar-cta">Get Started</a>
+  </div>
+</nav>
+
+<div class="post-hero">
+  <div class="post-hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog/">Free Guides</a><span>›</span>Severance Guide</div>
+    <span class="post-eyebrow">Severance Guide</span>
+    <h1>STOCK OPTIONS &amp; RSUS WHEN LAID OFF</h1>
+    <div class="post-meta"><span>April 2026</span><span>·</span><span>8 min read</span><span>·</span><span>SeveranceClarity</span></div>
+  </div>
+</div>
+<div class="hero-img-wrap">
+  <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80&auto=format&fit=crop" alt="Stock options RSUs equity treatment layoff"/>
+</div>
+
+<div class="post-wrap">
+  <div class="post-body">
+    <p class="post-lead">Equity treatment in a severance agreement can be worth more than the cash payment — or nothing, depending on what you had, what was vested, and what your agreement says. This is one of the most financially significant and least understood parts of any severance deal.</p>
+
+    <h2>THE FUNDAMENTAL RULE</h2>
+    <p>Vested equity is yours. Whatever was vested on your last day of employment — vested stock options you can exercise, RSUs that have already settled — the company cannot take that back through a severance agreement. What a severance agreement can affect is your <strong>unvested equity</strong>, the timeline for exercising options, and what happens to equity in specific termination scenarios.</p>
+
+    <h2>BY EQUITY TYPE</h2>
+
+    <div class="equity-grid">
+      <div class="equity-cell">
+        <div class="equity-type">RSUs</div>
+        <div class="equity-default">Default: Unvested RSUs forfeit</div>
+        <div class="equity-desc">Restricted Stock Units that haven't vested by your termination date are typically forfeited. The question is whether your severance accelerates any vesting — some companies offer partial acceleration as part of a negotiated departure.</div>
+      </div>
+      <div class="equity-cell">
+        <div class="equity-type">ISOs</div>
+        <div class="equity-default">Default: 90-day exercise window</div>
+        <div class="equity-desc">Incentive Stock Options typically must be exercised within 90 days of termination or they expire (and may convert to NSOs). Your severance may extend this window — a critical negotiation point if your options are valuable but you can't afford to exercise immediately.</div>
+      </div>
+      <div class="equity-cell">
+        <div class="equity-type">NSOs</div>
+        <div class="equity-default">Default: 90-day window (varies)</div>
+        <div class="equity-desc">Non-Qualified Stock Options have an exercise window set by the plan document. Unlike ISOs, there's no statutory 90-day rule — the plan controls. Many plans do default to 90 days post-termination.</div>
+      </div>
+      <div class="equity-cell">
+        <div class="equity-type">ESPP</div>
+        <div class="equity-default">Shares held; enrollment ends</div>
+        <div class="equity-desc">Employee Stock Purchase Plan shares already purchased are yours. Your enrollment in the plan terminates when employment ends, and any accumulated payroll deductions for the current purchase period may be refunded rather than used to purchase shares.</div>
+      </div>
+    </div>
+
+    <h2>WHAT YOUR SEVERANCE AGREEMENT MAY SAY ABOUT EQUITY</h2>
+    <p>Your severance agreement may address equity in several ways:</p>
+
+    <h3>Acceleration of Unvested Equity</h3>
+    <p>Some severance packages include partial or full acceleration of unvested RSUs or options. Single-trigger acceleration (vesting upon termination) is most common when the layoff is due to a company event like a reduction in force. This is more negotiable than most employees realize — particularly if you're being let go close to a vesting cliff.</p>
+
+    <h3>Extended Exercise Window</h3>
+    <p>For employees with valuable stock options, an extended exercise window (from 90 days to 1–3 years) can be enormously valuable — especially if the company is private and there's no immediate liquidity event. This is a point worth raising in severance negotiations for any employee with significant option holdings.</p>
+
+    <h3>The Forfeiture Provision</h3>
+    <p>Some severance agreements include provisions that forfeit already-vested equity if you violate the agreement — particularly the non-disparagement or non-compete clauses. This is a red flag worth examining carefully. Some of these provisions are unenforceable depending on state law, but they create practical risk.</p>
+
+    <div class="callout">
+      <div class="callout-label">The Cliff Problem</div>
+      <p>If you're laid off just before a vesting cliff — a date when a large block of equity vests — the financial stakes of your severance negotiation are significantly higher. An extra 30 days of employment or an acceleration provision could mean tens of thousands of dollars in equity that either vests or doesn't. This is worth raising explicitly with an employment attorney before you sign.</p>
+    </div>
+
+    <h2>WHAT TO LOOK FOR IN YOUR AGREEMENT</h2>
+    <ul>
+      <li><strong>Does the agreement address equity at all?</strong> If not, you're governed by the original grant documents — find them</li>
+      <li><strong>What does it say about unvested equity?</strong> Does anything accelerate, or does everything unvested simply forfeit?</li>
+      <li><strong>What is the exercise window for options?</strong> Is it the plan default or a negotiated extension?</li>
+      <li><strong>Are there any forfeiture provisions on vested equity?</strong> Under what conditions could you lose vested shares or options?</li>
+      <li><strong>What happens to equity in a future change of control?</strong> Some agreements address whether you'd participate in a future acquisition if it happens within a certain period after your departure</li>
+    </ul>
+
+    <h2>WHEN TO GET PROFESSIONAL HELP</h2>
+    <p>If you have significant equity holdings, this is the area where an employment attorney's time is most clearly justified. The tax implications of equity — particularly the interaction between ISO exercise timing and the alternative minimum tax — also warrant a conversation with a tax professional. The equity section of a severance agreement can easily be worth more than the legal fees to review it properly.</p>
+
+    <p style="font-size:12px;color:var(--muted);margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.07)"><em>This article is for educational purposes only. SeveranceClarity is a document analysis service and does not provide legal or financial advice. Equity matters are complex — consult a licensed employment attorney and tax professional for advice specific to your situation.</em></p>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-label">Full Equity Analysis</div>
+    <div class="report-card">
+      <div class="report-price">$347</div>
+      <span class="report-tag">Full Breakdown · includes equity analysis</span>
+      <ul class="report-features">
+        <li>Everything in Quick Explainer</li>
+        <li>Equity & stock analysis</li>
+        <li>Deferred comp breakdown</li>
+        <li>Red flag identification</li>
+        <li>10 questions before signing</li>
+      </ul>
+      <a href="/#pricing" class="report-btn">Get Full Breakdown — $347</a>
+    </div>
+  </aside>
+</div>
+
+<div class="final-cta">
+  <h2>UNDERSTAND BEFORE<br/><span>YOU SIGN.</span></h2>
+  <p>Your severance agreement is a legal document with long-term consequences. Get a plain-English explainer before you decide.</p>
+  <a href="/#pricing" class="btn-primary">Get My Explainer — $147</a>
+</div>
+
+<footer>
+  <span>© 2026 SeveranceClarity · Not legal advice · Educational purposes only</span>
+  <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/disclaimer.html">Disclaimer</a></span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Are Severance Payments Taxable? What Gets Withheld and What to Expect</title>
+  <meta name="description" content="Yes, severance pay is taxable — but how it's taxed depends on how it's paid. Here's what to expect from withholding, Social Security, and Medicare taxes on your severance package."/>
+  <link rel="canonical" href="https://severanceclarity.com/blog/is-severance-pay-taxable.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#0a0a0a;--dark:#111118;--dark2:#1a1a26;--mid:#252535;--steel:#3a3a52;--muted:#6b6b88;--fog:#a0a0bc;--light:#e8e8f0;--white:#f8f8fc;--red:#e63946;--red-dim:#c42d3a;--gold:#f4c430;--display:'Bebas Neue',sans-serif;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;}
+    html{scroll-behavior:smooth}
+    body{background:var(--dark);color:var(--light);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden}
+    a{color:var(--red);text-decoration:none}
+    a:hover{color:var(--gold)}
+    .topbar{background:var(--black);display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .topbar-logo{font-family:var(--display);font-size:1.6rem;letter-spacing:0.04em;color:var(--white);text-decoration:none}
+    .topbar-logo span{color:var(--red)}
+    .topbar-nav{display:flex;gap:32px;align-items:center}
+    .topbar-nav a{color:var(--fog);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
+    .topbar-nav a:hover{color:var(--white)}
+    .topbar-cta{background:var(--red);color:var(--white)!important;padding:10px 22px!important;font-weight:600!important}
+    .topbar-cta:hover{background:var(--red-dim)!important}
+    .post-hero{background:var(--black);padding:80px 40px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .post-hero-inner{max-width:820px;margin:0 auto;padding-bottom:56px}
+    .breadcrumb{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+    .breadcrumb a{color:var(--red)}.breadcrumb span{margin:0 10px;color:var(--steel)}
+    .post-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);margin-bottom:20px;display:block}
+    .post-hero h1{font-family:var(--display);font-size:clamp(2.8rem,6vw,5rem);letter-spacing:0.03em;color:var(--white);line-height:0.95;margin-bottom:24px}
+    .post-meta{font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);display:flex;gap:20px}
+    .hero-img-wrap{max-width:820px;margin:0 auto}
+    .hero-img-wrap img{width:100%;height:400px;object-fit:cover;display:block;opacity:0.65}
+    .post-wrap{max-width:820px;margin:0 auto;padding:56px 40px 100px;display:grid;grid-template-columns:1fr 240px;gap:56px;align-items:start}
+    .post-lead{font-family:var(--serif);font-size:1.2rem;font-weight:400;line-height:1.65;color:var(--light);margin-bottom:32px;padding-left:20px;border-left:3px solid var(--red)}
+    .post-body h2{font-family:var(--display);font-size:2.4rem;letter-spacing:0.03em;color:var(--white);margin:44px 0 16px;line-height:1;padding-top:44px;border-top:1px solid rgba(255,255,255,0.07)}
+    .post-body h2:first-child{margin-top:0;padding-top:0;border-top:none}
+    .post-body h3{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--gold);margin:28px 0 12px}
+    .post-body p{font-size:15px;font-weight:300;color:var(--fog);line-height:1.85;margin-bottom:18px}
+    .post-body ul,.post-body ol{padding-left:20px;margin-bottom:18px}
+    .post-body li{font-size:15px;font-weight:300;color:var(--fog);line-height:1.8;margin-bottom:8px}
+    .post-body strong{color:var(--light);font-weight:500}
+    .tax-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,0.06);margin:28px 0}
+    .tax-cell{background:var(--dark2);padding:20px}
+    .tax-label{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+    .tax-val{font-family:var(--display);font-size:2rem;color:var(--red);margin-bottom:6px}
+    .tax-desc{font-size:12px;color:var(--muted);line-height:1.55}
+    .callout{background:rgba(244,196,48,0.08);border-left:3px solid var(--gold);padding:20px 24px;margin:28px 0}
+    .callout-label{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+    .callout p{font-size:14px;font-weight:300;color:var(--light);margin:0;line-height:1.75}
+    .sidebar{position:sticky;top:88px}
+    .sidebar-label{font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--red);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08)}
+    .report-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);padding:24px}
+    .report-price{font-family:var(--display);font-size:3.5rem;letter-spacing:0.03em;color:var(--white);line-height:1;margin-bottom:4px}
+    .report-tag{font-size:12px;font-style:italic;color:var(--muted);margin-bottom:18px;display:block}
+    .report-features{list-style:none;margin-bottom:20px}
+    .report-features li{font-size:12px;color:var(--fog);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:8px;line-height:1.5}
+    .report-features li::before{content:'→';color:var(--red);flex-shrink:0}
+    .report-btn{display:block;width:100%;text-align:center;background:var(--red);color:var(--white);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:14px}
+    .report-btn:hover{background:var(--red-dim)}
+    .final-cta{text-align:center;padding:80px 40px;border-top:1px solid rgba(255,255,255,0.06);background:var(--black)}
+    .final-cta h2{font-family:var(--display);font-size:clamp(2.5rem,5vw,4.5rem);letter-spacing:0.04em;color:var(--white);line-height:0.95;margin-bottom:16px}
+    .final-cta h2 span{color:var(--red)}
+    .final-cta p{font-size:15px;color:var(--fog);margin-bottom:28px}
+    .btn-primary{display:inline-block;background:var(--red);color:var(--white);font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:16px 40px}
+    .btn-primary:hover{background:var(--red-dim);color:var(--white)}
+    footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.06);padding:40px;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--steel);flex-wrap:wrap;gap:16px}
+    footer a{color:var(--steel)}
+    @media(max-width:900px){.topbar{padding:0 20px}.topbar-nav{display:none}.post-hero{padding:60px 20px 0}.post-wrap{grid-template-columns:1fr;padding:48px 20px 80px}.sidebar{display:none}.tax-grid{grid-template-columns:1fr}.final-cta{padding:60px 20px}footer{padding:20px;flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<nav class="topbar">
+  <a href="/" class="topbar-logo">Severance<span>Clarity</span></a>
+  <div class="topbar-nav">
+    <a href="/#how-it-works">How It Works</a>
+    <a href="/#what-we-cover">What We Cover</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="/#pricing" class="topbar-cta">Get Started</a>
+  </div>
+</nav>
+
+<div class="post-hero">
+  <div class="post-hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog/">Free Guides</a><span>›</span>Severance Guide</div>
+    <span class="post-eyebrow">Severance Guide</span>
+    <h1>IS SEVERANCE PAY TAXABLE?</h1>
+    <div class="post-meta"><span>April 2026</span><span>·</span><span>7 min read</span><span>·</span><span>SeveranceClarity</span></div>
+  </div>
+</div>
+<div class="hero-img-wrap">
+  <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&auto=format&fit=crop" alt="Severance pay tax withholding calculation"/>
+</div>
+
+<div class="post-wrap">
+  <div class="post-body">
+    <p class="post-lead">Yes — severance pay is taxable income. But how it's taxed, what gets withheld, and what you might owe at tax time depends on factors most employees don't think about until after they've already spent the money.</p>
+
+    <h2>THE BASICS</h2>
+    <p>Severance pay is treated as ordinary income for federal tax purposes. It is subject to federal income tax withholding, Social Security tax, Medicare tax, and applicable state income taxes. The IRS treats severance the same as wages — it goes on your W-2 for the year in which it was paid.</p>
+
+    <div class="tax-grid">
+      <div class="tax-cell">
+        <div class="tax-label">Federal Income Tax</div>
+        <div class="tax-val">22–37%</div>
+        <div class="tax-desc">Withheld at your marginal rate or at the 22% supplemental wage rate if paid separately from regular wages</div>
+      </div>
+      <div class="tax-cell">
+        <div class="tax-label">Social Security Tax</div>
+        <div class="tax-val">6.2%</div>
+        <div class="tax-desc">Applied up to the annual wage base limit ($168,600 in 2026). May not apply if you've already hit the cap.</div>
+      </div>
+      <div class="tax-cell">
+        <div class="tax-label">Medicare Tax</div>
+        <div class="tax-val">1.45%</div>
+        <div class="tax-desc">No wage cap. High earners (above $200K single) pay an additional 0.9% surtax on the excess.</div>
+      </div>
+    </div>
+
+    <h2>HOW WITHHOLDING WORKS</h2>
+    <p>How your severance is paid affects how taxes are withheld:</p>
+
+    <h3>Lump Sum Payment</h3>
+    <p>If your severance is paid as a lump sum separately from your final paycheck, the IRS allows employers to withhold at the <strong>supplemental wage rate of 22%</strong> (or 37% if the total supplemental wages paid to you in the year exceed $1 million). This is a flat rate — it may be higher or lower than your actual marginal rate, which means you may owe additional tax or receive a refund when you file.</p>
+
+    <h3>Salary Continuation</h3>
+    <p>If your severance is paid as salary continuation — regular payroll payments over a defined period — it's typically withheld using your standard withholding method (W-4 elections). This more closely tracks your actual tax liability but results in smaller, periodic payments rather than a lump sum.</p>
+
+    <h3>What This Means for Your Tax Return</h3>
+    <p>Regardless of how withholding happens, your severance will appear on your W-2 as wages. At tax filing time, your actual tax liability is calculated on your total annual income — salary you earned earlier in the year, severance, any freelance income, investment income, etc. If withholding was insufficient, you'll owe the difference. If excess was withheld, you'll receive a refund.</p>
+
+    <h2>THE UNEMPLOYMENT INTERACTION</h2>
+    <p>Receiving severance pay can affect your unemployment benefit eligibility and amount in some states. Some states treat severance as wages paid for a future period, which can delay the start of unemployment benefits. Others don't count severance against unemployment eligibility at all. Check your state's specific rules — and when you file for unemployment, disclose your severance accurately.</p>
+
+    <h2>NEGOTIATING WITH TAXES IN MIND</h2>
+
+    <h3>Timing Can Matter</h3>
+    <p>If you're laid off late in the year and have already earned significant income, receiving a large lump-sum severance in the same tax year pushes more income into higher brackets. Requesting to receive part of your severance in the following calendar year — as salary continuation rather than lump sum — can sometimes reduce your total tax liability. This requires your employer's agreement and careful implementation.</p>
+
+    <h3>Retirement Contributions</h3>
+    <p>In some cases, severance can be contributed to a 401(k) or other qualified retirement plan, which would reduce your taxable income for the year. Whether this is allowed depends on your plan document and your employer's payroll setup. Ask your HR department before assuming this is an option.</p>
+
+    <div class="callout">
+      <div class="callout-label">Tax Planning Note</div>
+      <p>Understanding the tax implications of your severance is important for cash flow planning — but tax optimization strategies should be discussed with a qualified CPA or tax advisor, not an employment attorney or document analysis service. SeveranceClarity explains what your agreement says, not tax strategy.</p>
+    </div>
+
+    <p style="font-size:12px;color:var(--muted);margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.07)"><em>This article is for educational purposes only and does not constitute tax or legal advice. Tax laws change and individual situations vary. Consult a qualified tax professional for advice specific to your situation.</em></p>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-label">Understand Before You Sign</div>
+    <div class="report-card">
+      <div class="report-price">$147</div>
+      <span class="report-tag">Quick Explainer · delivered 24–48 hrs</span>
+      <ul class="report-features">
+        <li>Plain-English summary</li>
+        <li>Payment terms breakdown</li>
+        <li>Benefits & continuation</li>
+        <li>ADEA checklist if 40+</li>
+        <li>Formatted PDF report</li>
+      </ul>
+      <a href="/#pricing" class="report-btn">Get My Explainer →</a>
+    </div>
+  </aside>
+</div>
+
+<div class="final-cta">
+  <h2>UNDERSTAND BEFORE<br/><span>YOU SIGN.</span></h2>
+  <p>Your severance agreement is a legal document with long-term consequences. Get a plain-English explainer before you decide.</p>
+  <a href="/#pricing" class="btn-primary">Get My Explainer — $147</a>
+</div>
+
+<footer>
+  <span>© 2026 SeveranceClarity · Not legal advice · Educational purposes only</span>
+  <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/disclaimer.html">Disclaimer</a></span>
+</footer>
+</body>
+</html>
